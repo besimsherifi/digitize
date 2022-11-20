@@ -3,5 +3,39 @@
 @tailwind utilities;
 
 body{
-    background-color: black;
+    /* background-color: black; */
+}
+
+.delang span.show-on-hover {
+    visibility: hidden;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.delang:hover span.show-on-hover  {
+    visibility: visible;
+    
+
+}
+.delang{
+    cursor: pointer;
+    display: flex;
+    color: rgb(255 255 255 );
+}
+
+.home{
+    color: white;
+    display: flex;
+    font-family: sans-serif;
+    font-size: 6rem;
+    letter-spacing: -.02em;
+    line-height: 1;
+}
+
+.divv{
+    justify-content: space-evenly;
+    display: grid;
+    align-items: center;
+    align-content: center;
+    margin-top: 10%;
+    color: white;
 }

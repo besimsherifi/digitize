@@ -1,19 +1,33 @@
-import { useRouter } from 'next/router'
-import Navbar from './navbar'
-import en from '../public/locales/en/en.json'
-import al from '../public/locales/al/al.json'
-import mk from '../public/locales/mk/mk.json'
+import Image from 'next/image'
+import Navbar from '../components/navbar/navbar'
+import background from '../assets/background.jpg'
 
 export default function Home() {
 
-  const router = useRouter();
-  const { locale } = router;
-  const t = locale === "en" ? en : "mk" ? mk : al;
-
   return (
     <>
+      <div style={{
+        zIndex: -1,
+        position: "fixed",
+        width: "100vw",
+        height: "100vh"
+      }}>
+        <Image
+          src={background}
+          layout="fill"
+          objectFit='cover'
+        />
+      </div>
       <Navbar />
-      {/* <h1>{t.ABOUT}</h1> */}
+      <div className='divv'>
+        <h1 className='home'>A gang of <br />
+          international <br />
+          SEO talent 
+        </h1>
+        <br />
+        <p>We create great jobs for great people. All thanks to SEO.</p>
+      </div>
     </>
+
   )
 }
