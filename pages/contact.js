@@ -16,6 +16,7 @@ export default function Contact() {
         height: "100vh"
       }}>
         <Image
+        alt="img"
           src={background}
           layout="fill"
           objectFit='cover'

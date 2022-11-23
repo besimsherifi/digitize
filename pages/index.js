@@ -15,6 +15,7 @@ export default function Home() {
         height: "100vh"
       }}>
         <Image
+        alt="img"
           src={background}
           // layout="fill"
           objectFit='cover'
@@ -42,7 +43,7 @@ export default function Home() {
            <button  type="button" className="my-4 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Read More</button>
         </div>
         
-          <Image src={seo} width="400"></Image>
+          <Image src={seo} alt="img" width="400"></Image>
       </div>
 
       
@@ -56,7 +57,7 @@ export default function Home() {
           <p className='lg:max-w-520'>SEO is literally the only thing we do, so it would be a real shame if<br/> we weren’t able to put our money where our mouth is.<br/> That’s why we have recruited an army of 100 SEO experts.<br/> Together, we research, design, develop,<br/> and manage over 100+ websites. And how do we do that?<br/> Well, that’s a secret, one we’ll be happy to share!</p>
         </div>
         
-          <Image src={seo} width="220"></Image>
+          <Image alt="img" src={seo} width="220"></Image>
       </div>
       <Footer />
     </>
