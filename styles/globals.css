@@ -38,4 +38,19 @@ body{
     align-content: center;
     margin-top: 10%;
     color: white;
+    margin-bottom: 100px;
+}
+
+.test{
+    height: 720px;
+    background-color: #D7DDDD;
+}
+
+
+.h2{
+    font-size: 1.875rem;
+    font-weight: 700;
+    letter-spacing: -.02em;
+    line-height: 2.25rem;
+    color: white;
 }
